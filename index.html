@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DreamWise - Yasal Bilgiler</title>
+    <title>DreamWise - Legal</title>
     <style>
         :root {
             --bg-primary: #0A0118;
@@ -12,82 +12,51 @@
             --text-secondary: #a0a0a0;
             --accent: #8B5CF6;
         }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding: 20px;
         }
         .container {
-            max-width: 500px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
             text-align: center;
         }
-        .logo {
-            font-size: 4rem;
-            margin-bottom: 20px;
+        .logo { font-size: 4rem; margin-bottom: 20px; }
+        h1 { color: var(--accent); font-size: 2.5rem; margin-bottom: 10px; }
+        .tagline { color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 50px; }
+
+        h2 { color: var(--text-primary); font-size: 1.2rem; margin: 30px 0 15px; }
+
+        .language-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 30px;
         }
-        h1 {
-            color: var(--accent);
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        .tagline {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            margin-bottom: 50px;
-        }
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .link-card {
+
+        .lang-card {
             background: var(--bg-secondary);
-            padding: 20px 30px;
-            border-radius: 15px;
+            padding: 15px;
+            border-radius: 12px;
             text-decoration: none;
             color: var(--text-primary);
+            transition: transform 0.2s, background 0.2s;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            transition: transform 0.2s, background 0.2s;
+            gap: 10px;
         }
-        .link-card:hover {
-            transform: translateY(-3px);
+        .lang-card:hover {
+            transform: translateY(-2px);
             background: #251535;
         }
-        .link-content {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .link-icon {
-            font-size: 1.5rem;
-        }
-        .arrow {
-            color: var(--accent);
-            font-size: 1.2rem;
-        }
-        .language-switch {
-            margin-top: 40px;
-            color: var(--text-secondary);
-        }
-        .language-switch a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-        .language-switch a:hover {
-            text-decoration: underline;
-        }
+        .lang-flag { font-size: 1.5rem; }
+        .lang-name { font-size: 0.95rem; }
+
         .footer {
             margin-top: 50px;
             color: var(--text-secondary);
@@ -99,40 +68,55 @@
     <div class="container">
         <div class="logo">🌙</div>
         <h1>DreamWise</h1>
-        <p class="tagline">Rüyalarınızı keşfedin</p>
+        <p class="tagline">Select your language / Dilinizi seçin</p>
 
-        <div class="links">
-            <a href="privacy-policy.html" class="link-card">
-                <div class="link-content">
-                    <span class="link-icon">🔒</span>
-                    <span>Gizlilik Politikası</span>
-                </div>
-                <span class="arrow">→</span>
+        <h2>🌍 Available Languages</h2>
+
+        <div class="language-grid">
+            <a href="en/privacy-policy.html" class="lang-card">
+                <span class="lang-flag">🇬🇧</span>
+                <span class="lang-name">English</span>
             </a>
-
-            <a href="terms-of-service.html" class="link-card">
-                <div class="link-content">
-                    <span class="link-icon">📋</span>
-                    <span>Kullanım Koşulları</span>
-                </div>
-                <span class="arrow">→</span>
+            <a href="tr/privacy-policy.html" class="lang-card">
+                <span class="lang-flag">🇹🇷</span>
+                <span class="lang-name">Türkçe</span>
             </a>
-
-            <a href="support.html" class="link-card">
-                <div class="link-content">
-                    <span class="link-icon">💬</span>
-                    <span>Destek</span>
-                </div>
-                <span class="arrow">→</span>
+            <a href="ar/privacy-policy.html" class="lang-card">
+                <span class="lang-flag">🇸🇦</span>
+                <span class="lang-name">العربية</span>
             </a>
-        </div>
-
-        <div class="language-switch">
-            <a href="en/index.html">🇬🇧 English</a>
+            <a href="fa/privacy-policy.html" class="lang-card">
+                <span class="lang-flag">🇮🇷</span>
+                <span class="lang-name">فارسی</span>
+            </a>
+            <a href="he/privacy-policy.html" class="lang-card">
+                <span class="lang-flag">🇮🇱</span>
+                <span class="lang-name">עברית</span>
+            </a>
+            <a href="hi/privacy-policy.html" class="lang-card">
+                <span class="lang-flag">🇮🇳</span>
+                <span class="lang-name">हिन्दी</span>
+            </a>
+            <a href="bn/privacy-policy.html" class="lang-card">
+                <span class="lang-flag">🇧🇩</span>
+                <span class="lang-name">বাংলা</span>
+            </a>
+            <a href="te/privacy-policy.html" class="lang-card">
+                <span class="lang-flag">🇮🇳</span>
+                <span class="lang-name">తెలుగు</span>
+            </a>
+            <a href="ta/privacy-policy.html" class="lang-card">
+                <span class="lang-flag">🇮🇳</span>
+                <span class="lang-name">தமிழ்</span>
+            </a>
+            <a href="id/privacy-policy.html" class="lang-card">
+                <span class="lang-flag">🇮🇩</span>
+                <span class="lang-name">Bahasa Indonesia</span>
+            </a>
         </div>
 
         <div class="footer">
-            <p>&copy; 2025 DreamWise. Tüm hakları saklıdır.</p>
+            <p>&copy; 2025 DreamWise. All rights reserved.</p>
         </div>
     </div>
 </body>
