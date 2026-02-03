@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamWise - Legal Information</title>
+    <style>
+        :root {
+            --bg-primary: #0A0118;
+            --bg-secondary: #1a1025;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #8B5CF6;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: var(--accent);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 50px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .link-card {
+            background: var(--bg-secondary);
+            padding: 20px 30px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .link-card:hover {
+            transform: translateY(-3px);
+            background: #251535;
+        }
+        .link-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .link-icon {
+            font-size: 1.5rem;
+        }
+        .arrow {
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+        .language-switch {
+            margin-top: 40px;
+            color: var(--text-secondary);
+        }
+        .language-switch a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .language-switch a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 50px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🌙</div>
+        <h1>DreamWise</h1>
+        <p class="tagline">Explore your dreams</p>
+
+        <div class="links">
+            <a href="privacy-policy.html" class="link-card">
+                <div class="link-content">
+                    <span class="link-icon">🔒</span>
+                    <span>Privacy Policy</span>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+
+            <a href="terms-of-service.html" class="link-card">
+                <div class="link-content">
+                    <span class="link-icon">📋</span>
+                    <span>Terms of Service</span>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+
+            <a href="support.html" class="link-card">
+                <div class="link-content">
+                    <span class="link-icon">💬</span>
+                    <span>Support</span>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+
+        <div class="language-switch">
+            <a href="../index.html">🇹🇷 Türkçe</a>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 DreamWise. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

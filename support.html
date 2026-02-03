@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destek - DreamWise</title>
+    <style>
+        :root {
+            --bg-primary: #0A0118;
+            --bg-secondary: #1a1025;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #8B5CF6;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #333;
+        }
+        p, li {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+        ul {
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-card {
+            background: var(--bg-secondary);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .contact-icon {
+            font-size: 2.5rem;
+        }
+        .contact-info h3 {
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+        .contact-info p {
+            margin-bottom: 0;
+        }
+        .faq-item {
+            background: var(--bg-secondary);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        .faq-question {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .response-time {
+            background: linear-gradient(135deg, var(--accent), #6366f1);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Destek Merkezi</h1>
+        <p class="subtitle">Size nasıl yardımcı olabiliriz?</p>
+
+        <div class="response-time">
+            Ortalama yanıt süresi: <strong>24 saat içinde</strong>
+        </div>
+
+        <h2>İletişim</h2>
+
+        <div class="contact-card">
+            <span class="contact-icon">📧</span>
+            <div class="contact-info">
+                <h3>E-posta Desteği</h3>
+                <p><a href="mailto:support@dreamwise.app">support@dreamwise.app</a></p>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <span class="contact-icon">🐛</span>
+            <div class="contact-info">
+                <h3>Hata Bildirimi</h3>
+                <p><a href="mailto:bugs@dreamwise.app">bugs@dreamwise.app</a></p>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <span class="contact-icon">💡</span>
+            <div class="contact-info">
+                <h3>Öneri ve Geri Bildirim</h3>
+                <p><a href="mailto:feedback@dreamwise.app">feedback@dreamwise.app</a></p>
+            </div>
+        </div>
+
+        <h2>Sık Sorulan Sorular</h2>
+
+        <div class="faq-item">
+            <p class="faq-question">Premium aboneliğimi nasıl iptal edebilirim?</p>
+            <p class="faq-answer">Aboneliğinizi cihazınızın ayarlarından iptal edebilirsiniz. iOS için Ayarlar > Apple Kimliği > Abonelikler, Android için Google Play Store > Abonelikler bölümünden işlem yapabilirsiniz.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Rüya kayıtlarım güvende mi?</p>
+            <p class="faq-answer">Evet! Tüm verileriniz şifrelenerek güvenli sunucularda saklanır. Rüya kayıtlarınıza yalnızca siz erişebilirsiniz.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Sesli kayıt nasıl çalışır?</p>
+            <p class="faq-answer">Rüyanızı sesli olarak anlatabilirsiniz. Ses kaydınız yapay zeka tarafından metne dönüştürülür ve rüya günlüğünüze kaydedilir. Ses dosyası işlemden sonra silinir.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Hesabımı nasıl silebilirim?</p>
+            <p class="faq-answer">Uygulama içi ayarlardan "Hesabı Sil" seçeneğini kullanabilir veya support@dreamwise.app adresine e-posta gönderebilirsiniz. Hesabınız ve tüm verileriniz 30 gün içinde kalıcı olarak silinir.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Rüya yorumları ne kadar doğru?</p>
+            <p class="faq-answer">Rüya yorumlarımız geleneksel rüya sembolizmi ve modern psikolojik yaklaşımları temel alır. Ancak bu yorumlar eğlence ve kişisel keşif amaçlıdır, profesyonel psikolojik danışmanlık yerine geçmez.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">İnternet bağlantısı olmadan kullanabilir miyim?</p>
+            <p class="faq-answer">Rüyalarınızı çevrimdışı olarak kaydedebilirsiniz. Ancak AI yorumları ve senkronizasyon için internet bağlantısı gereklidir.</p>
+        </div>
+
+        <h2>Destek Talebi Gönderirken</h2>
+        <p>Daha hızlı yardım alabilmek için lütfen aşağıdaki bilgileri ekleyin:</p>
+        <ul>
+            <li>Kullandığınız cihaz ve işletim sistemi versiyonu</li>
+            <li>Uygulama versiyonu (Ayarlar > Hakkında)</li>
+            <li>Sorununuzun detaylı açıklaması</li>
+            <li>Varsa ekran görüntüleri</li>
+        </ul>
+
+        <div class="footer">
+            <p>&copy; 2025 DreamWise. Tüm hakları saklıdır.</p>
+            <p style="margin-top: 10px;">
+                <a href="privacy-policy.html">Gizlilik Politikası</a> |
+                <a href="terms-of-service.html">Kullanım Koşulları</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
